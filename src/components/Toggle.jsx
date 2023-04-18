@@ -7,7 +7,7 @@ export default function Toggle() {
       <div className="flex items-center justify-between gap-4">
          <span className="h-3 max-w-4xl w-full bg-slate-600 rounded-full block"></span>
          <span
-            className={`h-6 w-10 rounded-full block relative cursor-pointer ${
+            className={`h-6 min-w-[40px] rounded-full block relative cursor-pointer ${
                isLeft === true ? "bg-slate-800" : "bg-slate-600"
             }`}
             onClick={() => setIsLeft(!isLeft)}
